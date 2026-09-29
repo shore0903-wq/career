@@ -323,6 +323,8 @@
   .cred li{position:relative;padding-left:16px;color:var(--muted);font-size:15px;line-height:1.7}
   .cred li::before{content:"";position:absolute;left:1px;top:.8em;width:6px;height:1.5px;border-radius:1px;background:var(--faint)}
   @media(max-width:640px){.cred{grid-template-columns:1fr;gap:6px}.cred .when{padding-top:0}}
+  .cred-award{display:flex;align-items:center;gap:18px}
+  .cred-award .mark{flex:none;width:76px;height:auto}
 
   /* ---------- contact ---------- */
   .contact{
@@ -410,6 +412,7 @@
     .cred h3{font-size:10pt}
     .cred .org{font-size:9pt;margin-bottom:4px}
     .cred p,.cred li{font-size:9.2pt}
+    .cred-award .mark{width:16mm}
 
     .contact{margin-top:22px;padding-top:14px;break-inside:avoid;gap:10px 24px}
     .contact div b{font-size:8.4pt}
@@ -945,9 +948,12 @@
   <h2>수상 · 표창</h2>
   <div class="cred">
     <div class="when">2026. 06. 01</div>
-    <div>
-      <h3>우수인증설계사</h3>
-      <p class="org">한국보험대리점협회</p>
+    <div class="cred-award">
+      <img class="mark" src="img/award-igaa-mark.png" alt="우수인증설계사 인증 마크" width="234" height="225" loading="lazy" decoding="async">
+      <div>
+        <h3>우수인증설계사</h3>
+        <p class="org">한국보험대리점협회 · 인증번호 2026-25673</p>
+      </div>
     </div>
   </div>
   <div class="cred">
