@@ -1,5 +1,5 @@
 <meta name="robots" content="noindex, nofollow">
-<title>김준현 포트폴리오</title>
+<title>김준현 경력기술서</title>
 <style>
   /* ---------- Pretendard (공식 서브셋 · SIL OFL 1.1) ---------- */
   @font-face{font-family:"Pretendard";font-style:normal;font-weight:400;font-display:swap;src:url("font/pretendard-400.woff2") format("woff2")}
@@ -55,6 +55,10 @@
     letter-spacing:-.01em;color:var(--navy);margin-top:14px;line-height:1.5;
   }
   .thesis{max-width:42em;color:var(--muted);font-size:16.5px;line-height:1.8;margin:22px 0 0}
+  .hmeta{display:flex;flex-wrap:wrap;gap:6px 8px;margin:18px 0 0;padding:0}
+  .hmeta span{font-size:13.5px;color:var(--navy);background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:4px 12px;line-height:1.5}
+  .tools-line{margin:0;color:var(--muted);font-size:14.5px;line-height:1.65}
+  .rows dd .shots{margin-top:14px}
 
   /* ---------- figures strip ---------- */
   .figures{
@@ -159,7 +163,7 @@
   }
   .shot figcaption:empty{display:none}
   .shot figcaption b{color:var(--data);font-weight:600}
-  .shots.is-collapsed > .shot:nth-child(n+9){display:none}
+  .shots.is-collapsed > .shot:nth-child(n+5){display:none}
   .shots-more{
     grid-column:1/-1;justify-self:start;margin-top:2px;
     font:inherit;font-size:13.5px;font-weight:600;color:var(--data);
@@ -286,10 +290,11 @@
 
   /* ---------- pipeline ---------- */
   .pipe{
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));
+    display:grid;grid-template-columns:repeat(7,1fr);
     gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:3px;overflow:hidden;margin:4px 0;
   }
   .pipe div{background:var(--card);padding:12px 12px 13px}
+  @media(max-width:720px){.pipe{grid-template-columns:repeat(4,1fr)}.pipe::after{content:"";background:var(--card);grid-column:auto/-1}}
   .pipe .n{display:block;font-size:12px;font-weight:600;color:var(--data);margin-bottom:4px;font-variant-numeric:tabular-nums}
   .pipe .t{display:block;font-size:13.5px;color:var(--ink);line-height:1.45}
 
@@ -351,6 +356,9 @@
     h1{font-size:22pt}
     h1 .sub{font-size:11.5pt;margin-top:7px}
     .thesis{font-size:10pt;margin-top:10px;max-width:none}
+    .hmeta{margin-top:8px}
+    .hmeta span{font-size:8.6pt;padding:1px 8px}
+    .tools-line{font-size:9.2pt}
 
     section{padding-top:18px}
     h2{font-size:13pt;margin-bottom:12px;padding-bottom:6px;break-after:avoid}
@@ -427,307 +435,134 @@
 <header>
   <p class="eyebrow">경력기술서 · 포트폴리오</p>
   <h1>김준현
-    <span class="sub">데이터 기반 온라인 마케팅 · 웹 서비스 기획 · 보험·금융 도메인</span>
+    <span class="sub">고객이 먼저 찾아오는 구조를 만드는 보험·금융 마케터</span>
   </h1>
-  <p class="thesis">검색 데이터를 수집·정제·분석해 타겟 세그먼트를 도출하고, 웹 서비스와 콘텐츠로 인바운드 채널을 직접 설계·구축해 고객 DB를 창출하여 계약으로 전환시킨 마케터. 보험 영업전략 기획·수립 및 온라인 채널 구축·운영 경험 5년, AI 기반 업무 자동화로 콘텐츠 운영 리소스 90% 감축.</p>
+  <p class="thesis">지인 기반 없이 보험 영업을 시작해, 검색 데이터로 고객이 망설이는 지점을 찾고 그 지점에 콘텐츠와 비교·계산 서비스로 먼저 답을 두는 방식으로 온라인 고객 확보 채널을 구축. 생명·손해 32개 보험사 상품 비교 상담으로 누적 2,000명 이상의 고객을 만나 보유계약 402건·합계보험료 6.37억 원을 달성.</p>
+  <p class="hmeta"><span>보험 영업·마케팅 경력 5년 7개월</span><span>서울시립대 경영학 · 도시부동산기획경영학 복수전공</span><span>우수인증설계사 (한국보험대리점협회)</span></p>
 </header>
 
 <section style="padding-top:36px">
   <dl class="figures">
     <div class="fig">
       <dt>누적 합계보험료</dt>
-      <dd>6.37<span>억 원</span><span class="note">영진에셋 46개월</span></dd>
-    </div>
-    <div class="fig">
-      <dt>보유계약</dt>
-      <dd>402<span>건</span><span class="note">영진에셋 · 제휴 32개사</span></dd>
-    </div>
-    <div class="fig">
-      <dt>검색 노출</dt>
-      <dd>6.9<span>만 회</span><span class="note">웹서비스 3종 · 최근 30~90일</span></dd>
+      <dd>6.37<span>억 원</span><span class="note">보유계약 402건 · 46개월</span></dd>
     </div>
     <div class="fig">
       <dt>실적 증대</dt>
-      <dd>2.43<span>배</span><span class="note">직전 2개년 · 전기 대비</span></dd>
+      <dd>2.43<span>배</span><span class="note">직전 2개년 합계보험료 · 전기 대비</span></dd>
+    </div>
+    <div class="fig">
+      <dt>누적 상담 고객</dt>
+      <dd>2,000<span>명+</span><span class="note">계약 고객 583명</span></dd>
+    </div>
+    <div class="fig">
+      <dt>검색 노출</dt>
+      <dd>6.9<span>만 회</span><span class="note">운영 서비스 3종 · 최근 30~90일</span></dd>
     </div>
   </dl>
-  <div class="shots"><figure class="shot"><img src="img/top-01.jpg" alt="" loading="lazy" decoding="async" width="1036" height="893" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-02.png" alt="" loading="lazy" decoding="async" width="1085" height="773" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-03.jpg" alt="" loading="lazy" decoding="async" width="1100" height="872" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-04.jpg" alt="" loading="lazy" decoding="async" width="757" height="872" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-05.jpg" alt="" loading="lazy" decoding="async" width="1100" height="1100" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-06.jpg" alt="" loading="lazy" decoding="async" width="1054" height="922" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-07.jpg" alt="" loading="lazy" decoding="async" width="1200" height="843" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-08.jpg" alt="" loading="lazy" decoding="async" width="856" height="795" tabindex="0" role="button"><figcaption></figcaption></figure></div>
+  <div class="shots is-collapsed"><figure class="shot"><img src="img/top-01.jpg" alt="" loading="lazy" decoding="async" width="1036" height="893" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-02.png" alt="" loading="lazy" decoding="async" width="1085" height="773" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-03.jpg" alt="" loading="lazy" decoding="async" width="1100" height="872" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-04.jpg" alt="" loading="lazy" decoding="async" width="757" height="872" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-05.jpg" alt="" loading="lazy" decoding="async" width="1100" height="1100" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-06.jpg" alt="" loading="lazy" decoding="async" width="1054" height="922" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-07.jpg" alt="" loading="lazy" decoding="async" width="1200" height="843" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/top-08.jpg" alt="" loading="lazy" decoding="async" width="856" height="795" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+4장 더보기</button></div>
 </section>
 
-<section>
-  <h2>경력</h2>
+<section id="skills">
+  <h2>핵심 역량</h2>
+
+  <div class="skill">
+    <h3>고객 확보 · 온라인 영업전략</h3>
+    <p>소개받을 지인이 없는 조건에서 고객 0명부터 시작해, 오프라인 소개영업에 의존하지 않는 온라인 인바운드 고객 확보 구조를 직접 설계·운영. 검색 유입 → 정보 탐색 → 계산·비교 → 상담 신청 → 계약 → 사후관리로 이어지는 고객 여정을 구간별로 관리해 합계보험료 기준 직전 2개년 실적을 전기 대비 2.43배로 증대.</p>
+  </div>
+
+  <div class="skill">
+    <h3>데이터 기반 타겟 마케팅</h3>
+    <p>네이버 검색광고·데이터랩 데이터로 키워드 수요를 교차 검증하고, 상품이 아닌 고객 상황 단위(비과세 요건, 톤틴연금, 과실비율, 부지급 대응 등)로 세그먼트를 도출. 조회수·댓글은 늘지만 계약으로 이어지지 않던 정보성 콘텐츠를 비교·판단형 콘텐츠로 전환해 5억 원 이상의 연금보험 계약으로 연결. 운영 서비스 3종에서 검색 노출 6.9만 회·유입 1,570회 확보.</p>
+  </div>
+
+  <div class="skill">
+    <h3>금융 상품 분석 · 컨설팅</h3>
+    <p>생명보험 20개사·손해보험 12개사 상품을 비교 분석해 고객 재무상황별 보장·연금 포트폴리오 설계. 공시이율·최저보증이율·사업비·해지환급률을 분해하고 세제 조건을 반영한 순수익 기준으로 대안을 제시. 저축성보험 비과세 요건, 상속·증여 절세 방안 등 세무 이슈 상담과 약관·판례 분석 기반의 보험금 부지급 분쟁 대응 수행.</p>
+  </div>
+
+  <div class="skill">
+    <h3>교육 · 콘텐츠 커뮤니케이션</h3>
+    <p>복잡한 약관·세법을 비전문가가 판단할 수 있는 형태로 구조화해 전달. 상속·증여 27p, 토지 권리분석 54p, 실손보험 11p, 비과세 요건 7p 교육자료를 직접 제작해 강의·고객 안내에 활용. 입사 6개월 성과를 인정받아 전국 지점에 송출되는 신입 설계사 교육의 일일 강사로 참여.</p>
+  </div>
+
+  <div class="skill">
+    <h3>준법 마케팅 · AI 활용</h3>
+    <p>금융소비자보호법 기준으로 콘텐츠·광고 문구를 사전 점검하는 심의 프로세스 운영. 생성형 AI로 계산·비교 서비스와 상담 응대·콘텐츠 제작 자동화를 직접 구현해, 반복 업무는 줄이고 판단이 필요한 상담에 집중.</p>
+  </div>
+</section>
+
+<section id="career">
+  <h2>경력 <span class="h2-note">총 5년 7개월</span></h2>
 
   <!-- 영진에셋 -->
   <div class="job">
     <div class="job-head">
       <h3>(주)영진에셋</h3>
-      <span class="job-role">잠실스타사업단 · GFC</span>
+      <span class="job-role">잠실스타사업단 · GFC(보험 컨설턴트)</span>
     </div>
-    <p class="job-meta">2022. 12 ~ 재직 중 (46개월) · 서울 잠실</p>
+    <p class="job-meta">2022. 12 ~ 재직 중 (46개월) · 서울 잠실 · 법인보험대리점(GA)</p>
 
     <dl class="rows">
       <dt class="first">성과</dt>
       <dd class="first">
-        <p class="achv">검색 데이터 기반 온라인 영업 채널을 구축하여 오프라인 소개영업 의존 구조를 온라인 다이렉트 인바운드 구조로 전환, 보유계약 <b>402건</b>(법인, 자동차, 일반, 재물보험 제외)·총합계보험료 약 <b>6억 3,663만원</b> 달성함(일시납 5억 5,900만원, 월납 7,763만원).</p>
-        <p class="achv">프로세스 시스템화를 통해 합계보험료 기준 직전 2개년(2024년, 2025년) 실적을 전기 대비 <b>2.43배</b> 증대함.</p>
-        <p class="achv">32개 제휴보험사(생명보험 20개, 손해보험 12개) 상품을 비교 분석하는 상담 체계를 운영하여 누적 상담고객 <b>2,000명 이상</b> 경험, 실제 고객 583명(지난 회사 고객 포함)의 계약을 체결·관리함.</p>
-        <p class="achv">웹 서비스 3종을 직접 기획·개발하여 네이버 검색 <b>노출 6.9만 회·유입 클릭 1,570회</b>(2026. 09. 08 기준, 최근 30~90일) 확보, 지난 구간 대비 노출 최대 742% ~ 1,967% 증대함.</p>
+        <p class="achv">검색 데이터 기반 온라인 영업 채널을 구축해 소개영업 의존 구조를 온라인 인바운드 구조로 전환, 보유계약 <b>402건</b>·합계보험료 약 <b>6억 3,663만 원</b> 달성(일시납 5억 5,900만 원, 월납 7,763만 원 · 법인·자동차·일반·재물보험 제외).</p>
+        <p class="achv">상담부터 계약까지의 프로세스를 표준화·자동화해 합계보험료 기준 직전 2개년(2024~2025년) 실적을 전기 대비 <b>2.43배</b> 증대.</p>
+        <p class="achv">32개 제휴보험사 상품 비교 상담으로 누적 상담고객 <b>2,000명 이상</b>, 계약 고객 583명(전 직장 포함) 관리.</p>
+        <p class="achv">연금보험 비교·보험 계산기 등 고객용 웹 서비스 3종을 기획·운영해 네이버 검색 <b>노출 6.9만 회·유입 1,570회</b> 확보(2026. 09. 08 기준, 최근 30~90일).</p>
       </dd>
 
-      <dt>역할</dt>
+      <dt>담당</dt>
       <dd>
-        <p class="rgroup">키워드 데이터 분석</p>
+        <p class="rgroup">보험 컨설팅 · 고객 관리</p>
         <ul>
-          <li>네이버 검색광고(SA) API로 키워드 절대검색량, DataLab API로 상대 검색추이를 병렬 수집해 <strong>통합 키워드 분석 프로세스 설계</strong> (PowerShell `Invoke-RestMethod` + HMAC 서명 인증 직접 구현).</li>
-          <li>고객 상황 단위(톤틴연금, 부지급대응, 과실비율, 미지급보험금, 비과세요건)로 키워드를 분해해 고전환 롱테일 세그먼트 도출.</li>
-          <li>도출한 세그먼트를 네이버 C-Rank·DIA 로직에 맞춘 3,000자 이상 콘텐츠로 발행, 상위 포스팅 조회수 1만 회 이상 6건 확보.</li>
+          <li>생명·손해 32개 보험사 상품 비교 분석 기반 고객 상황별 보장·연금·저축 포트폴리오 설계.</li>
+          <li>공시이율·최저보증이율·사업비·해지환급률을 분해한 순수익 기준 연금 상품 비교 안내.</li>
+          <li>약관·특약·분쟁조정 사례·판례를 분석해 보험금 부지급 통보 건에 이의를 제기, 지급 결정을 받아내고 기존 고객의 소개 계약으로 연결.</li>
+          <li>비과세 요건·실손보험 재가입 주기 등 고객이 놓치기 쉬운 정보를 안내자료로 제작해 계약 이후 관계 관리.</li>
         </ul>
-        <p class="rgroup">퍼널·리드 자동화</p>
+        <p class="rgroup">온라인 마케팅 · 채널 운영</p>
         <ul>
-          <li>유입-탐색-전환 3단계 랜딩 퍼널 설계 및 전환 지점(계산기 결과 확인 시점)에 DB 수집 폼 배치.</li>
-          <li>수집 리드를 Google Sheets DB 자동 적재 + 텔레그램 봇 즉시 알림으로 연결해 리드 응대 리드타임 단축.</li>
-          <li>리드별 맞춤 안내자료(PNG) 자동 생성 파이프라인 구축해 상담 준비 시간 단축.</li>
+          <li>네이버 검색광고·데이터랩 데이터로 키워드 수요를 분석해 고객 상황 단위의 타겟 세그먼트 도출.</li>
+          <li>유입 → 탐색 → 전환 3단계 퍼널을 설계하고, 고객이 계산 결과를 확인한 시점에 상담 신청을 배치.</li>
+          <li>상담 신청 즉시 알림·고객 정보 자동 정리·맞춤 안내자료 자동 생성으로 응대 대기 시간과 상담 준비 시간 단축.</li>
+          <li>검색광고 키워드 심의 규정에 맞춰 핵심 키워드를 데이터로 재검증·재선정.</li>
         </ul>
-        <p class="rgroup">보험 컨설팅·교육</p>
+        <p class="rgroup">준법 · 교육</p>
         <ul>
-          <li>생명·손해 32개 보험사 상품을 비교 분석하여 고객 상황별 연금 및 보장 포트폴리오 설계.</li>
-          <li>약관·특약·부지급 판례를 정밀 분석해 보험금 부지급 및 분쟁 건 대응, 2차 소개로 고객 창출 연결.</li>
-          <li>금융소비자보호법 준수 기준을 반영한 콘텐츠·광고 카피 심의 프로세스 수립.</li>
-          <li>상속·증여 세법 관련 부동산 이전전략 사례 교육자료를 직접 제작해 사무실 구성원 대상 강의 수행(2025. 10).</li>
+          <li>금융소비자보호법 기준 콘텐츠·광고 문구 사전 심의 프로세스 운영.</li>
+          <li>상속·증여 부동산 이전 전략 교육자료(27p)를 직접 제작해 사무실 구성원 대상 강의 수행(2025. 10).</li>
         </ul>
-      </dd>
-
-      <dt>기술</dt>
-      <dd>
-        <div class="tech">
-          <div><b>Data/API</b><span>네이버 검색광고(SA) API, 네이버 DataLab API, 네이버 서치어드바이저, 공공데이터포털 API, Google Sheets API.</span></div>
-          <div><b>Analytics</b><span>키워드 정량·정성 분석, 퍼널 전환율 분석, CTR/노출 리포팅, Excel.</span></div>
-          <div><b>Marketing</b><span>SEO(C-Rank·DIA), 검색광고 운영, 랜딩페이지 전환 최적화, 온라인 다이렉트 마케팅.</span></div>
-          <div><b>Dev</b><span>Claude Code 기반 바이브코딩, Node.js, TypeScript, HTML/CSS/JS.</span></div>
-        </div>
       </dd>
     </dl>
-  <div class="shots"><figure class="shot"><img src="img/job-yj-01.jpg" alt="" loading="lazy" decoding="async" width="950" height="479" tabindex="0" role="button"><figcaption></figcaption></figure></div>
-
-    <!-- projects -->
-    <div class="projects">
-      <p class="plabel">주요 프로젝트</p>
-
-      <article class="proj">
-        <div class="proj-head">
-          <h4>STABLELIFE — 연금보험 비교 랜딩페이지</h4>
-          <a href="https://stablelife.kr" target="_blank" rel="noopener">stablelife.kr</a>
-        </div>
-        <p class="proj-meta">2026. 06 ~ 현재 (4개월) · 기획·개발·운영 단독 수행</p>
-        <dl class="rows">
-          <dt class="first">성과</dt>
-          <dd class="first"><p class="achv">연금 검색 수요를 타겟한 비교·계산 랜딩페이지를 단독 기획·개발하여 30일 기준 <b>노출 7,200회·클릭 230회·CTR 3.2%</b> 달성, 전월 대비 노출 742.8%·클릭 430.2% 증대함.</p></dd>
-          <dt>역할</dt>
-          <dd>
-            <ul>
-              <li>연금 상품 7종의 공식 안내장 수치를 정제해 상품별 연금액·환급금 계산 로직 구현 및 고객DB 확보 체계 구축.</li>
-              <li>TOP 3개 보험사 상품을 단일 조건으로 비교하는 `/compare` 페이지 설계 — 클릭 80회·CTR 7.6%로 사이트 내 최고 전환 지면 확보.</li>
-              <li>상품 1개 = 폴더 1개 구조의 콘텐츠 빌드 시스템 설계로 신규 상품 추가시 반복 작업 최소화, 브랜드 일관성 유지.</li>
-              <li>계산 결과 확인 시점에 리드 폼을 배치하여 Google Sheets 자동 적재, 텔레그램 봇으로 즉시 상담접수 알림 발송.</li>
-              <li>카카오 개발자센터 API로 카카오로그인 및 공유하기 CTA를 구현하여 추가 유입 경로 확보.</li>
-              <li>검색광고 키워드 심의 규정에 대응해 메인 키워드를 재선정하고 SA·DataLab API로 성과 재검증.</li>
-            </ul>
-          </dd>
-          <dt>지표</dt>
-          <dd>
-          <div class="shots">
-            <figure class="shot"><img src="img/dash-01.png" loading="lazy" decoding="async" width="1170" height="928" alt="stablelife.kr 최근 30일 노출·클릭·CTR 요약"><figcaption><b>노출 7.2천 · 클릭 230 · CTR 3.2%</b><br>전월 대비 노출 +742.8%</figcaption></figure>
-            <figure class="shot"><img src="img/dash-02.png" loading="lazy" decoding="async" width="864" height="760" alt="stablelife.kr 상위 검색 키워드"><figcaption>상위 키워드 — 최저보증톤틴연금 등</figcaption></figure>
-            <figure class="shot"><img src="img/dash-03.png" loading="lazy" decoding="async" width="908" height="703" alt="stablelife.kr 상위 유입 웹문서"><figcaption><b>/compare CTR 7.6%</b> — 최고 전환 지면</figcaption></figure>
-          </div>
-          <p class="srcnote">출처: 네이버 서치어드바이저 · 2026. 09. 08 기준 최근 30일</p>
-          </dd>
-          <dt>기술</dt>
-          <dd><div class="tech">
-            <div><b>Data</b><span>네이버 SA API, DataLab API, 서치어드바이저.</span></div>
-            <div><b>Dev</b><span>Node.js, 정적 사이트 빌드(build.mjs), HTML/CSS/JS.</span></div>
-            <div><b>Integration</b><span>Google Sheets API, 텔레그램 봇 API, 카카오 API.</span></div>
-          </div></dd>
-        </dl>
-  <div class="shots is-collapsed"><figure class="shot"><img src="img/proj-stab-01.jpg" alt="" loading="lazy" decoding="async" width="757" height="872" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-02.jpg" alt="" loading="lazy" decoding="async" width="1200" height="879" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-03.jpg" alt="" loading="lazy" decoding="async" width="1022" height="924" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-04.jpg" alt="" loading="lazy" decoding="async" width="1036" height="877" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-05.jpg" alt="" loading="lazy" decoding="async" width="963" height="828" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-06.jpg" alt="" loading="lazy" decoding="async" width="1050" height="909" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-07.jpg" alt="" loading="lazy" decoding="async" width="1031" height="926" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-08.jpg" alt="" loading="lazy" decoding="async" width="1114" height="919" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-09.jpg" alt="" loading="lazy" decoding="async" width="1050" height="923" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-10.jpg" alt="" loading="lazy" decoding="async" width="1100" height="343" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-11.jpg" alt="" loading="lazy" decoding="async" width="660" height="1435" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-12.jpg" alt="" loading="lazy" decoding="async" width="540" height="1174" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-13.jpg" alt="" loading="lazy" decoding="async" width="800" height="1351" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-14.jpg" alt="" loading="lazy" decoding="async" width="800" height="949" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-15.jpg" alt="" loading="lazy" decoding="async" width="660" height="934" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+7장 더보기</button></div>
-      </article>
-
-      <article class="proj">
-        <div class="proj-head">
-          <h4>INSUTALKER — 보험 계산기 플랫폼 및 AI 자동화 블로그</h4>
-          <a href="https://insutalker.kr" target="_blank" rel="noopener">insutalker.kr</a>
-        </div>
-        <p class="proj-meta">2026. 04 ~ 현재 (6개월)</p>
-        <dl class="rows">
-          <dt class="first">성과</dt>
-          <dd class="first"><p class="achv">보험 계산기 툴을 검색 진입점으로 설계하여 90일 기준 <b>노출 3.0만 회·클릭 980회·CTR 3.3%</b> 달성, 전 구간 대비 노출 1,967.7%·클릭 1,933.3% 증대함.</p></dd>
-          <dt>역할</dt>
-          <dd>
-            <ul>
-              <li>검색량 대비 경쟁 강도가 낮은 계산기 수요를 발굴해 보험나이·실비·입원비·4대보험 등 <strong>계산기 10종</strong> 기획 및 개발.</li>
-              <li>최다 유입 지면 `/calculator/insurance-age` 클릭 379회·CTR 6.3%, `/calculator/silbi` 클릭 204회·CTR 12.6% 확보.</li>
-              <li>공공데이터포털 API를 연동해 전국 병원·약국 정보 자동 수집·정제 후 인근 응급실 찾기 기능 구현, 체류시간 및 재방문 확보.</li>
-              <li>카카오 소셜 로그인 API 연동으로 회원가입 이탈 방어 및 공유 CTA로 추가 트래픽 유입 설계.</li>
-              <li>금융소비자보호법 준수 범위 내 순수 정보성 의료비 콘텐츠 자동 생성·발행 체계 운영.</li>
-            </ul>
-          </dd>
-          <dt>지표</dt>
-          <dd>
-          <div class="shots">
-            <figure class="shot"><img src="img/dash-04.png" loading="lazy" decoding="async" width="1085" height="773" alt="insutalker.kr 상위 검색 키워드"><figcaption><b>노출 3.0만 · 클릭 980 · CTR 3.3%</b><br>전 구간 대비 노출 +1,967.7%</figcaption></figure>
-            <figure class="shot"><img src="img/dash-05.png" loading="lazy" decoding="async" width="861" height="698" alt="insutalker.kr 상위 유입 웹문서"><figcaption><b>보험나이 계산기 280클릭</b> · 실비계산기 CTR 22.4%</figcaption></figure>
-            <figure class="shot"><img src="img/dash-06.png" loading="lazy" decoding="async" width="859" height="728" alt="insutalker.kr 최근 90일 노출·클릭·CTR 요약"><figcaption>/calculator/insurance-age <b>379클릭</b> · /silbi CTR 12.6%</figcaption></figure>
-          </div>
-          <p class="srcnote">출처: 네이버 서치어드바이저 · 2026. 09. 08 기준 최근 90일</p>
-          </dd>
-          <dt>기술</dt>
-          <dd><div class="tech">
-            <div><b>Data</b><span>공공데이터포털 API, 네이버 SA/DataLab API, 서치어드바이저.</span></div>
-            <div><b>Dev</b><span>Node.js 20+, TypeScript(ESM), Express, EJS, SQLite.</span></div>
-            <div><b>Integration</b><span>카카오 개발자센터 API.</span></div>
-          </div></dd>
-        </dl>
-  <div class="shots"><figure class="shot"><img src="img/proj-insu-01.jpg" alt="" loading="lazy" decoding="async" width="1200" height="843" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-02.jpg" alt="" loading="lazy" decoding="async" width="1100" height="814" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-03.jpg" alt="" loading="lazy" decoding="async" width="1200" height="893" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-04.jpg" alt="" loading="lazy" decoding="async" width="796" height="769" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-05.jpg" alt="" loading="lazy" decoding="async" width="1100" height="689" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-06.jpg" alt="" loading="lazy" decoding="async" width="1200" height="733" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-07.jpg" alt="" loading="lazy" decoding="async" width="1200" height="749" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-08.jpg" alt="" loading="lazy" decoding="async" width="1100" height="862" tabindex="0" role="button"><figcaption></figcaption></figure></div>
-      </article>
-
-      <article class="proj">
-        <div class="proj-head">
-          <h4>AI 멀티에이전트 콘텐츠 자동화 파이프라인</h4>
-        </div>
-        <p class="proj-meta">2026. 03 ~ 현재 (7개월)</p>
-        <dl class="rows">
-          <dt class="first">성과</dt>
-          <dd class="first"><p class="achv">데이터 수집부터 발행까지 7단계를 독립 에이전트로 분화한 멀티에이전트 아키텍처를 설계하여 콘텐츠 생산·검토 리소스를 수작업 대비 <b>90% 감축</b>한 콘텐츠 자동 발행 체계를 달성함.</p></dd>
-          <dt>구조</dt>
-          <dd>
-            <div class="pipe">
-              <div><span class="n">01</span><span class="t">데이터 수집</span></div>
-              <div><span class="n">02</span><span class="t">키워드 분석</span></div>
-              <div><span class="n">03</span><span class="t">본문 작성</span></div>
-              <div><span class="n">04</span><span class="t">카드뉴스 생성</span></div>
-              <div><span class="n">05</span><span class="t">레이아웃 배치</span></div>
-              <div><span class="n">06</span><span class="t">피드백 검토</span></div>
-              <div><span class="n">07</span><span class="t">발행·배포</span></div>
-            </div>
-          </dd>
-          <dt>역할</dt>
-          <dd>
-            <ul>
-              <li>7단계(데이터 수집 → 키워드 분석 → 본문 작성 → 카드뉴스 생성 → 레이아웃 배치 → 피드백 검토 → 발행·배포)를 단계별 `agent.md` 명세로 구조화해 독립 실행·교체 가능하도록 설계.</li>
-              <li>node-cron 기반 매일 03:00 KST 자동 발행 스케줄러 구성 및 PM2 프로세스 관리.</li>
-              <li>Gemini와 Claude를 단계별 역할에 따라 분리 배치해 생성 품질과 비용 최적화.</li>
-              <li>Meta API 연동으로 발행 콘텐츠와 카드뉴스를 인스타그램·Threads까지 자동 멀티채널 배포.</li>
-              <li>NHN Cloud(Ubuntu) 서버 구축 및 Cloudflare 연동으로 무중단 운영 환경 확보.</li>
-            </ul>
-          </dd>
-          <dt>기술</dt>
-          <dd><div class="tech">
-            <div><b>AI</b><span>Claude, Gemini, 멀티에이전트 오케스트레이션, 프롬프트 엔지니어링.</span></div>
-            <div><b>Dev</b><span>Node.js, TypeScript, node-cron.</span></div>
-            <div><b>Infra</b><span>NHN Cloud, Ubuntu, PM2, Cloudflare.</span></div>
-            <div><b>Integration</b><span>Meta(Instagram/Threads) API.</span></div>
-          </div></dd>
-        </dl>
-  <div class="shots"><figure class="shot"><img src="img/proj-pipe-01.jpg" alt="" loading="lazy" decoding="async" width="660" height="1435" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-pipe-02.jpg" alt="" loading="lazy" decoding="async" width="660" height="1435" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-pipe-03.jpg" alt="" loading="lazy" decoding="async" width="540" height="1174" tabindex="0" role="button"><figcaption></figcaption></figure></div>
-      </article>
-
-      <article class="proj">
-        <div class="proj-head">
-          <h4>LANDTALKER — 부동산 데이터 서비스</h4>
-          <a href="https://landtalker.kr" target="_blank" rel="noopener">landtalker.kr</a>
-        </div>
-        <p class="proj-meta">2025. 10 ~ 현재 (12개월)</p>
-        <dl class="rows">
-          <dt class="first">성과</dt>
-          <dd class="first"><p class="achv">부동산 세무·경매 계산 도구를 검색 진입점으로 구축하여 90일 기준 <b>노출 3.2만 회·클릭 360회</b> 달성, 전 구간 대비 노출 1,675.1% 증대함.</p></dd>
-          <dt>역할</dt>
-          <dd>
-            <ul>
-              <li>측량수수료·지연이자·경매 최저가·지분토지·국민주택규모 등 부동산 실무 계산기 기획 및 개발.</li>
-              <li>최다 노출 지면 `/tools/national-housing` 노출 10,562회, 최고 전환 지면 `/tools/survey-fee` CTR 7.2% 확보.</li>
-              <li>도시부동산기획경영학 복수전공 및 경매 실무 지식을 계산 로직과 콘텐츠 설계에 반영.</li>
-            </ul>
-          </dd>
-          <dt>지표</dt>
-          <dd>
-          <div class="shots">
-            <figure class="shot"><img src="img/dash-07.png" loading="lazy" decoding="async" width="1036" height="893" alt="landtalker.kr 최근 90일 노출·클릭·CTR 요약"><figcaption><b>노출 3.2만 · 클릭 360 · CTR 1.1%</b><br>전 구간 대비 노출 +1,675.1%</figcaption></figure>
-            <figure class="shot"><img src="img/dash-08.png" loading="lazy" decoding="async" width="830" height="713" alt="landtalker.kr 상위 유입 웹문서"><figcaption>/tools/national-housing <b>노출 10,562</b> · survey-fee CTR 7.2%</figcaption></figure>
-          </div>
-          <p class="srcnote">출처: 네이버 서치어드바이저 · 2026. 09. 08 기준 최근 90일</p>
-          </dd>
-          <dt>기술</dt>
-          <dd><div class="tech">
-            <div><b>Data</b><span>서치어드바이저, 부동산 공시·실거래 데이터.</span></div>
-            <div><b>Dev</b><span>Node.js, TypeScript, Express, SQLite.</span></div>
-          </div></dd>
-        </dl>
-  <div class="shots"><figure class="shot"><img src="img/proj-land-01.jpg" alt="" loading="lazy" decoding="async" width="814" height="760" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-land-02.jpg" alt="" loading="lazy" decoding="async" width="856" height="795" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-land-03.jpg" alt="" loading="lazy" decoding="async" width="822" height="882" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-land-04.jpg" alt="" loading="lazy" decoding="async" width="1004" height="921" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-land-05.jpg" alt="" loading="lazy" decoding="async" width="1000" height="915" tabindex="0" role="button"><figcaption></figcaption></figure></div>
-      </article>
-
-      <article class="proj">
-        <div class="proj-head">
-          <h4>보험을보험답게 — 네이버 블로그 콘텐츠 채널</h4>
-          <a href="https://blog.naver.com/kjh0903_" target="_blank" rel="noopener">blog.naver.com/kjh0903_</a>
-        </div>
-        <p class="proj-meta">2021. 05 ~ 현재 (65개월)</p>
-        <dl class="rows">
-          <dt class="first">성과</dt>
-          <dd class="first"><p class="achv">검색 기반 콘텐츠 채널을 단독 운영하여 누적 게시글 86건, 이웃 433명을 확보하고 <b>조회수 1만 회 이상 포스팅 6건</b>을 배출해 인바운드 상담 유입 채널을 구축함.</p></dd>
-          <dt>역할</dt>
-          <dd>
-            <ul>
-              <li>SA·DataLab API 분석 결과를 콘텐츠 주제로 직결하는 키워드-콘텐츠 매핑 프로세스 운영.</li>
-              <li>연금보험·단기납종신·교통사고보험처리·숨은보험금찾기 등 고객 상황별 카테고리 체계 설계.</li>
-              <li>가독성 중심 문체 가이드('보답톤')를 정립해 콘텐츠 품질 표준화.</li>
-              <li>카드뉴스 디자인 시스템 정립 및 자동 생성 파이프라인 연동.</li>
-            </ul>
-          </dd>
-          <dt>기술</dt>
-          <dd><div class="tech">
-            <div><b>Marketing</b><span>네이버 SEO(C-Rank·DIA), 콘텐츠 기획, 카드뉴스 디자인.</span></div>
-            <div><b>Data</b><span>네이버 SA API, DataLab API.</span></div>
-          </div></dd>
-        </dl>
-  <div class="shots"><figure class="shot"><img src="img/proj-blog-01.jpg" alt="" loading="lazy" decoding="async" width="1054" height="922" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-blog-02.jpg" alt="" loading="lazy" decoding="async" width="1050" height="829" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-blog-03.jpg" alt="" loading="lazy" decoding="async" width="1037" height="546" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-blog-04.jpg" alt="" loading="lazy" decoding="async" width="950" height="889" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-blog-05.jpg" alt="" loading="lazy" decoding="async" width="1024" height="895" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-blog-06.jpg" alt="" loading="lazy" decoding="async" width="1006" height="896" tabindex="0" role="button"><figcaption></figcaption></figure></div>
-      </article>
-    </div>
+    <div class="shots"><figure class="shot"><img src="img/job-yj-01.jpg" alt="" loading="lazy" decoding="async" width="950" height="479" tabindex="0" role="button"><figcaption></figcaption></figure></div>
   </div>
 
   <!-- 에이플러스에셋 -->
   <div class="job">
     <div class="job-head">
       <h3>(주)에이플러스에셋어드바이저</h3>
-      <span class="job-role">강남본부 코엑스사업단 · TFA</span>
+      <span class="job-role">강남본부 코엑스사업단 · TFA(보험 컨설턴트)</span>
     </div>
-    <p class="job-meta">2021. 03 ~ 2022. 12 (22개월) · 서울 송파</p>
+    <p class="job-meta">2021. 03 ~ 2022. 12 (22개월) · 서울 송파 · 법인보험대리점(GA)</p>
     <dl class="rows">
       <dt class="first">성과</dt>
       <dd class="first">
-        <p class="achv">소개영업이 표준인 조직에서 지인 네트워크 없이 오프라인 개척과 온라인 콘텐츠를 병행한 신규 고객 발굴 방식을 구축하여, <b>소개에 의존하지 않는 독자 유입 경로</b>를 확보함.</p>
-        <p class="achv">사내에 온라인 영업 사례가 없던 상황에서 <b>입사 6개월간의 블로그·지식인 기반 고객 발굴 성과</b>를 인정받아, 신입 양성과정 일일 강사로 강남 본사에서 <b>전국 지점 교육장에 송출되는 세션</b>을 진행함.</p>
+        <p class="achv">소개영업이 표준인 조직에서 지인 네트워크 없이 오프라인 개척과 온라인 콘텐츠를 병행해 <b>소개에 의존하지 않는 독자 고객 유입 경로</b>를 확보.</p>
+        <p class="achv">사내에 온라인 영업 사례가 없던 상황에서 입사 6개월간의 블로그·지식iN 기반 고객 발굴 성과를 인정받아, 신입 양성과정 일일 강사로 <b>전국 지점 교육장에 송출되는 세션</b> 진행.</p>
       </dd>
-      <dt>역할</dt>
+      <dt>담당</dt>
       <dd>
         <ul>
-          <li>지인 영업 대상이 없는 조건(타지역 출신 재학생)에서 상권 방문 명함 배포 및 전통시장 전단 배포로 초기 고객 접점 확보.</li>
-          <li>네이버 블로그 콘텐츠 발행 및 지식인 답변으로 온라인 유입 경로 개척 — <strong>이후 검색 데이터 기반 고객 발굴 전략의 출발점</strong>.</li>
-          <li>숨은 보험금·미청구 보험금 발굴 및 교통사고 보험처리 지원으로 신뢰 확보 후 계약 전환하는 인바운드 방식 정착.</li>
-          <li>세일즈 퍼널 7단계(가망고객 발굴 → 초회상담(Approach) → 니즈환기(Fact Finding) → 제안 → 거절처리(Pain Point) → 계약체결 → 사후관리) 운용.</li>
-          <li>고객 건강 및 재무상황 기반 리스크 관리 보험 보장분석 컨설팅 수행.</li>
-          <li>보험금 청구 및 미지급·분쟁 사례 대응.</li>
-          <li>2021년 시행된 금융소비자보호법을 준수하기 위한 준법 마케팅 체계 수립.</li>
-          <li>무경력 신입 설계사 양성과정 일일 강사(2021. 09~10)로 블로그 운영 및 온라인 DB 창출 프로세스 세션 진행.</li>
+          <li>상권 방문 명함 배포·전통시장 전단 배포로 초기 고객 접점 확보, 네이버 블로그·지식iN으로 온라인 유입 경로 개척.</li>
+          <li>숨은 보험금·미청구 보험금 발굴, 교통사고 보험처리 지원으로 신뢰를 먼저 쌓은 뒤 계약으로 전환하는 인바운드 방식 정착.</li>
+          <li>가망고객 발굴 → 초회상담 → 니즈환기 → 제안 → 거절처리 → 계약체결 → 사후관리의 7단계 세일즈 프로세스 운용.</li>
+          <li>고객 건강·재무상황 기반 보장분석 컨설팅, 보험금 청구 및 미지급·분쟁 대응.</li>
+          <li>2021년 시행된 금융소비자보호법 준수를 위한 준법 마케팅 기준 수립.</li>
           <li class="caveat">※ 학업 병행(2022. 02 졸업) 조건에서 수행.</li>
         </ul>
       </dd>
-      <dt>기술</dt>
-      <dd><div class="tech">
-        <div><b>Marketing</b><span>세일즈 퍼널 설계·운용, 블로그 콘텐츠 마케팅, 고객 DB 발굴.</span></div>
-        <div><b>Domain</b><span>생명·손해보험 보장분석, 보험금 청구 실무, 금융소비자보호법.</span></div>
-      </div></dd>
     </dl>
-  
   </div>
 
   <!-- 서울특별시의회 -->
@@ -738,88 +573,182 @@
     </div>
     <p class="job-meta">2020. 01 ~ 2020. 02 (2개월) · 서울 중구</p>
     <dl class="rows">
-      <dt class="first">성과</dt>
-      <dd class="first"><p class="achv">서울시 교통 정책 현안 데이터를 정리하여 위원회 안건 검토 자료로 제공, 의정 활동 의사결정을 지원함.</p></dd>
-      <dt>역할</dt>
-      <dd>
+      <dt class="first">담당</dt>
+      <dd class="first">
         <ul>
-          <li>서울시 교통 정책 및 현안 관련 데이터 요청 및 정리.</li>
+          <li>서울시 교통 정책 현안 데이터를 요청·정리해 위원회 안건 검토 기초자료로 제공.</li>
           <li>의정 활동 지원을 위한 행정 자료 정리.</li>
-          <li>위원회 안건 관련 기초 자료 정리.</li>
         </ul>
       </dd>
-      <dt>기술</dt>
-      <dd><div class="tech"><div><b>Analytics</b><span>공공 정책 데이터 조사·정리.</span></div></div></dd>
     </dl>
-  
   </div>
 </section>
 
-<section>
-  <h2>기술</h2>
+<section id="projects">
+  <h2>주요 프로젝트 <span class="h2-note">영업 현장의 문제를 직접 기획한 서비스로 해결</span></h2>
 
-  <div class="skill">
-    <h3>데이터 수집 · 정제 · 분석</h3>
-    <p>API를 통한 대량 키워드 데이터 수집부터 결론 도출까지 전 과정을 단독 수행. 네이버 검색광고(SA) API로 절대검색량을, DataLab API로 상대 검색추이를 수집해 두 지표를 교차 검증하는 통합 분석 프로세스를 설계했으며, HMAC 서명 인증을 직접 구현해 운영 중. 수집 데이터를 고객 상황 단위 세그먼트로 정제하고, 세그먼트별 전환 성과를 서치어드바이저 지표(노출·클릭·CTR)로 역추적해 키워드 포트폴리오를 재조정하는 사이클을 운영.</p>
-  </div>
+  <article class="proj">
+    <div class="proj-head">
+      <h4>STABLELIFE — 연금보험 비교 서비스</h4>
+      <a href="https://stablelife.kr" target="_blank" rel="noopener">stablelife.kr</a>
+    </div>
+    <p class="proj-meta">2026. 06 ~ 현재 · 기획·운영 단독</p>
+    <dl class="rows">
+      <dt class="first">배경</dt>
+      <dd class="first"><p class="achv">연금보험은 보험사마다 조건이 달라 같은 기준으로 비교하기 어렵고, 결정 직전의 고객이 이 단계에서 가장 많이 이탈.</p></dd>
+      <dt>실행</dt>
+      <dd>
+        <ul>
+          <li>연금보험 7종의 공식 안내 수치를 기준으로, 고객이 직접 연금액·환급금을 계산해 보는 비교 서비스 기획.</li>
+          <li>주요 3개 보험사 상품을 같은 조건으로 나란히 보여주는 비교 페이지 설계.</li>
+          <li>고객이 결과를 확인해 가치를 체감한 직후에 상담 신청을 배치하고, 신청 즉시 알림이 오도록 연결.</li>
+          <li>결과를 지인에게 보여주고 싶어 하는 고객 행동에 착안해 카카오톡 공유하기로 추천 경로 확보.</li>
+        </ul>
+      </dd>
+      <dt>결과</dt>
+      <dd>
+        <p class="achv">30일 기준 <b>노출 7,200회·클릭 230회·CTR 3.2%</b>, 전월 대비 노출 742.8%·클릭 430.2% 증가. 비교 페이지가 <b>CTR 7.6%</b>로 사이트 내 최고 전환 지면.</p>
+        <div class="shots"><figure class="shot"><img src="img/dash-01.png" loading="lazy" decoding="async" width="1170" height="928" alt="stablelife.kr 최근 30일 노출·클릭·CTR 요약"><figcaption><b>노출 7.2천 · 클릭 230 · CTR 3.2%</b><br>전월 대비 노출 +742.8%</figcaption></figure><figure class="shot"><img src="img/dash-02.png" loading="lazy" decoding="async" width="864" height="760" alt="stablelife.kr 상위 검색 키워드"><figcaption>상위 키워드 — 최저보증톤틴연금 등</figcaption></figure><figure class="shot"><img src="img/dash-03.png" loading="lazy" decoding="async" width="908" height="703" alt="stablelife.kr 상위 유입 웹문서"><figcaption><b>/compare CTR 7.6%</b> — 최고 전환 지면</figcaption></figure></div>
+        <p class="srcnote">출처: 네이버 서치어드바이저 · 2026. 09. 08 기준 최근 30일</p>
+      </dd>
+      <dt>도구</dt>
+      <dd><p class="tools-line">네이버 검색광고·데이터랩, 서치어드바이저, Google Sheets, 카카오 공유하기, 생성형 AI(Claude)</p></dd>
+    </dl>
+    <div class="shots is-collapsed"><figure class="shot"><img src="img/proj-stab-01.jpg" alt="" loading="lazy" decoding="async" width="757" height="872" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-02.jpg" alt="" loading="lazy" decoding="async" width="1200" height="879" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-03.jpg" alt="" loading="lazy" decoding="async" width="1022" height="924" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-04.jpg" alt="" loading="lazy" decoding="async" width="1036" height="877" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-05.jpg" alt="" loading="lazy" decoding="async" width="963" height="828" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-06.jpg" alt="" loading="lazy" decoding="async" width="1050" height="909" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-07.jpg" alt="" loading="lazy" decoding="async" width="1031" height="926" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-08.jpg" alt="" loading="lazy" decoding="async" width="1114" height="919" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-09.jpg" alt="" loading="lazy" decoding="async" width="1050" height="923" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-10.jpg" alt="" loading="lazy" decoding="async" width="1100" height="343" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-11.jpg" alt="" loading="lazy" decoding="async" width="660" height="1435" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-12.jpg" alt="" loading="lazy" decoding="async" width="540" height="1174" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-13.jpg" alt="" loading="lazy" decoding="async" width="800" height="1351" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-14.jpg" alt="" loading="lazy" decoding="async" width="800" height="949" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-stab-15.jpg" alt="" loading="lazy" decoding="async" width="660" height="934" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+11장 더보기</button></div>
+  </article>
 
-  <div class="skill">
-    <h3>타겟 마케팅 전략 수립 및 집행</h3>
-    <p>도출한 세그먼트를 콘텐츠·랜딩페이지·검색광고로 집행하고 전환 성과를 측정하는 전 과정을 담당. 유입-탐색-전환 3단계 퍼널을 설계하고 전환 지점에 리드 수집을 배치해 트래픽을 고객 DB로 전환. 웹 서비스 3종에서 90일 기준 노출 6.9만 회·클릭 1,570회를 확보했으며, CTR 편차(0.2%~12.6%)를 분석해 고전환 지면에 자원을 재배분.</p>
-  </div>
+  <article class="proj">
+    <div class="proj-head">
+      <h4>INSUTALKER — 보험 계산기 서비스</h4>
+      <a href="https://insutalker.kr" target="_blank" rel="noopener">insutalker.kr</a>
+    </div>
+    <p class="proj-meta">2026. 04 ~ 현재 · 기획·운영 단독</p>
+    <dl class="rows">
+      <dt class="first">배경</dt>
+      <dd class="first"><p class="achv">상담마다 보험나이·실손보험료·입원비처럼 같은 계산 질문이 반복되어 상담 시간이 분산되고 응대가 지연.</p></dd>
+      <dt>실행</dt>
+      <dd>
+        <ul>
+          <li>검색 수요는 있지만 경쟁이 적은 계산 수요를 찾아 보험나이·실손·입원비·4대보험 등 <strong>계산기 10종</strong> 기획.</li>
+          <li>공공데이터를 활용한 병원·약국·응급실 찾기 기능을 더해 재방문 이유 확보.</li>
+          <li>금융소비자보호법 범위 안의 정보성 의료비 콘텐츠를 정기 발행해 검색 유입 확대.</li>
+        </ul>
+      </dd>
+      <dt>결과</dt>
+      <dd>
+        <p class="achv">90일 기준 <b>노출 3.0만 회·클릭 980회·CTR 3.3%</b>, 이전 구간 대비 노출 1,967.7% 증가. 보험나이 계산기 클릭 379회, 실손보험 계산기 CTR 12.6%. 반복 질문은 서비스가 먼저 답하고, 판단이 필요한 상담에 시간을 집중.</p>
+        <div class="shots"><figure class="shot"><img src="img/dash-04.png" loading="lazy" decoding="async" width="1085" height="773" alt="insutalker.kr 상위 검색 키워드"><figcaption><b>노출 3.0만 · 클릭 980 · CTR 3.3%</b><br>전 구간 대비 노출 +1,967.7%</figcaption></figure><figure class="shot"><img src="img/dash-05.png" loading="lazy" decoding="async" width="861" height="698" alt="insutalker.kr 상위 유입 웹문서"><figcaption><b>보험나이 계산기 280클릭</b> · 실비계산기 CTR 22.4%</figcaption></figure><figure class="shot"><img src="img/dash-06.png" loading="lazy" decoding="async" width="859" height="728" alt="insutalker.kr 최근 90일 노출·클릭·CTR 요약"><figcaption>/calculator/insurance-age <b>379클릭</b> · /silbi CTR 12.6%</figcaption></figure></div>
+        <p class="srcnote">출처: 네이버 서치어드바이저 · 2026. 09. 08 기준 최근 90일</p>
+      </dd>
+      <dt>도구</dt>
+      <dd><p class="tools-line">네이버 검색광고·데이터랩, 서치어드바이저, 공공데이터포털, 카카오 로그인, 생성형 AI(Claude)</p></dd>
+    </dl>
+    <div class="shots is-collapsed"><figure class="shot"><img src="img/proj-insu-01.jpg" alt="" loading="lazy" decoding="async" width="1200" height="843" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-02.jpg" alt="" loading="lazy" decoding="async" width="1100" height="814" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-03.jpg" alt="" loading="lazy" decoding="async" width="1200" height="893" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-04.jpg" alt="" loading="lazy" decoding="async" width="796" height="769" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-05.jpg" alt="" loading="lazy" decoding="async" width="1100" height="689" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-06.jpg" alt="" loading="lazy" decoding="async" width="1200" height="733" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-07.jpg" alt="" loading="lazy" decoding="async" width="1200" height="749" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-insu-08.jpg" alt="" loading="lazy" decoding="async" width="1100" height="862" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+4장 더보기</button></div>
+  </article>
 
-  <div class="skill">
-    <h3>보험 · 금융 도메인 및 온라인 영업전략</h3>
-    <p>생명·손해 32개 보험사 상품 비교 분석 및 고객 재무상황별 보장 포트폴리오 설계. 온라인 영업전략을 수립·집행해 46개월간 보유계약 402건·합계보험료 6억 3,663만 원 달성. 약관·특약·부지급 판례 분석 기반 보험금 분쟁 대응 수행. 금융소비자보호법 준수 마케팅 체계 수립 경험 보유.</p>
-  </div>
+  <article class="proj">
+    <div class="proj-head">
+      <h4>보험을보험답게 — 보험 정보 블로그 채널</h4>
+      <a href="https://blog.naver.com/kjh0903_" target="_blank" rel="noopener">blog.naver.com/kjh0903_</a>
+    </div>
+    <p class="proj-meta">2021. 05 ~ 현재 · 기획·운영 단독</p>
+    <dl class="rows">
+      <dt class="first">배경</dt>
+      <dd class="first"><p class="achv">지인 기반이 없어 고객이 먼저 고민을 드러내는 검색창을 첫 접점으로 선택. 초기 정보성 글은 댓글과 문의만 늘고 계약으로 이어지지 않음.</p></dd>
+      <dt>실행</dt>
+      <dd>
+        <ul>
+          <li>키워드 데이터 분석 결과를 콘텐츠 주제로 바로 연결하는 키워드-콘텐츠 매핑 체계 운영.</li>
+          <li>정보 전달에서 끝나던 글을, 고객 고민에 해결 방안을 제시하고 상품을 같은 조건에서 비교해 판단할 수 있는 글로 전환.</li>
+          <li>연금보험·단기납종신·교통사고 보험처리·숨은보험금 등 고객 상황별 카테고리와 문체 가이드, 카드뉴스 디자인 기준 정립.</li>
+        </ul>
+      </dd>
+      <dt>결과</dt>
+      <dd><p class="achv">비교·판단형 콘텐츠 전환 후 <b>5억 원 이상의 연금보험 계약</b>으로 연결. 누적 게시글 86건·이웃 433명, <b>조회수 1만 회 이상 포스팅 6건</b>.</p></dd>
+      <dt>도구</dt>
+      <dd><p class="tools-line">네이버 블로그·지식iN, 네이버 검색광고·데이터랩, 카드뉴스 디자인</p></dd>
+    </dl>
+    <div class="shots is-collapsed"><figure class="shot"><img src="img/proj-blog-01.jpg" alt="" loading="lazy" decoding="async" width="1054" height="922" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-blog-02.jpg" alt="" loading="lazy" decoding="async" width="1050" height="829" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-blog-03.jpg" alt="" loading="lazy" decoding="async" width="1037" height="546" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-blog-04.jpg" alt="" loading="lazy" decoding="async" width="950" height="889" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-blog-05.jpg" alt="" loading="lazy" decoding="async" width="1024" height="895" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-blog-06.jpg" alt="" loading="lazy" decoding="async" width="1006" height="896" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+2장 더보기</button></div>
+  </article>
 
-  <div class="skill">
-    <h3>교육 · 지식 전달</h3>
-    <p>복잡한 규제·세법 데이터를 비전문가가 의사결정 가능한 형태로 구조화해 전달한 경험 보유. 5세대 실손보험 출시 및 세대별 재가입 주기 안내 11p, 저축성보험 비과세요건 정리자료 7p 사내교육·고객안내 자료 제작, 상속·증여 세법을 7개 고객 케이스로 재구성한 27p 교육자료, 토지 가치분석 54p 강의자료. 입사 6개월 시점 성과를 인정받아 전국 지점 송출 교육에 일일 강사로 참여한 이력 보유. 분석 결과를 조직이 실행 가능한 형태로 이전하는 역량.</p>
-  </div>
-
-  <div class="skill">
-    <h3>AI 활용 및 업무 자동화</h3>
-    <p>Claude Code 기반 바이브코딩으로 마케팅에 필요한 웹 서비스를 직접 구현. 7단계 멀티에이전트 콘텐츠 파이프라인을 설계해 콘텐츠 생산·검토 리소스를 90% 감축. Claude·Gemini·ChatGPT·NotebookLM을 업무 성격별로 분리 활용하여 약관 분석, 콘텐츠 생성, 상담자료 작성 프로세스를 표준화.</p>
-  </div>
-
-  <div class="skill">
-    <h3>부동산 · 공공데이터</h3>
-    <p>도시부동산기획경영학 복수전공 및 경매 실무 과정 이수. 등기부등본 권리분석, 용도지역·공법상 규제 검토, 실거래 데이터 기반 물건 가치 평가 수행. 공공데이터포털 API를 활용한 전국 부동산 실거래가 데이터 추적 및 분석 콘텐츠 발행. API를 활용한 병원·약국 데이터 수집·정제·서비스화 경험 보유.</p>
-  </div>
+  <article class="proj" id="p-auto">
+    <div class="proj-head">
+      <h4>콘텐츠 제작 자동화 · LANDTALKER 부동산 정보 서비스</h4>
+      <a href="https://landtalker.kr" target="_blank" rel="noopener">landtalker.kr</a>
+    </div>
+    <p class="proj-meta">2025. 10 ~ 현재 · 기획·운영 단독</p>
+    <dl class="rows">
+      <dt class="first">배경</dt>
+      <dd class="first"><p class="achv">영업·상담·마케팅을 혼자 맡아 꾸준한 콘텐츠 발행이 가장 큰 병목.</p></dd>
+      <dt>실행</dt>
+      <dd>
+        <div class="pipe">
+          <div><span class="n">01</span><span class="t">데이터 수집</span></div>
+          <div><span class="n">02</span><span class="t">키워드 분석</span></div>
+          <div><span class="n">03</span><span class="t">본문 작성</span></div>
+          <div><span class="n">04</span><span class="t">카드뉴스 생성</span></div>
+          <div><span class="n">05</span><span class="t">레이아웃 배치</span></div>
+          <div><span class="n">06</span><span class="t">검토</span></div>
+          <div><span class="n">07</span><span class="t">발행·배포</span></div>
+        </div>
+        <ul style="margin-top:14px">
+          <li>데이터 수집부터 발행까지 7단계를 생성형 AI로 분업화해 매일 자동 발행하고, 인스타그램·스레드까지 함께 배포.</li>
+          <li>도시부동산 전공과 경매 실무 지식을 살려 측량수수료·경매 최저가·지분토지 등 부동산 실무 계산 도구를 갖춘 정보 서비스 운영.</li>
+        </ul>
+      </dd>
+      <dt>결과</dt>
+      <dd>
+        <p class="achv">콘텐츠 제작·검토 리소스를 수작업 대비 <b>90% 감축</b>. LANDTALKER 90일 기준 <b>노출 3.2만 회·클릭 360회</b>, 이전 구간 대비 노출 1,675.1% 증가.</p>
+        <div class="shots"><figure class="shot"><img src="img/dash-07.png" loading="lazy" decoding="async" width="1036" height="893" alt="landtalker.kr 최근 90일 노출·클릭·CTR 요약"><figcaption><b>노출 3.2만 · 클릭 360 · CTR 1.1%</b><br>전 구간 대비 노출 +1,675.1%</figcaption></figure><figure class="shot"><img src="img/dash-08.png" loading="lazy" decoding="async" width="830" height="713" alt="landtalker.kr 상위 유입 웹문서"><figcaption>/tools/national-housing <b>노출 10,562</b> · survey-fee CTR 7.2%</figcaption></figure></div>
+        <p class="srcnote">출처: 네이버 서치어드바이저 · 2026. 09. 08 기준 최근 90일</p>
+      </dd>
+      <dt>도구</dt>
+      <dd><p class="tools-line">생성형 AI(Claude·Gemini), 인스타그램·스레드, 서치어드바이저, 공공 부동산 데이터</p></dd>
+    </dl>
+    <div class="shots is-collapsed"><figure class="shot"><img src="img/proj-pipe-01.jpg" alt="" loading="lazy" decoding="async" width="660" height="1435" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-pipe-02.jpg" alt="" loading="lazy" decoding="async" width="660" height="1435" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-pipe-03.jpg" alt="" loading="lazy" decoding="async" width="540" height="1174" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-land-01.jpg" alt="" loading="lazy" decoding="async" width="814" height="760" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-land-02.jpg" alt="" loading="lazy" decoding="async" width="856" height="795" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-land-03.jpg" alt="" loading="lazy" decoding="async" width="822" height="882" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-land-04.jpg" alt="" loading="lazy" decoding="async" width="1004" height="921" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/proj-land-05.jpg" alt="" loading="lazy" decoding="async" width="1000" height="915" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+4장 더보기</button></div>
+  </article>
 </section>
-  
 
-<section>
-  <h2>문서 · 도구</h2>
-  <div class="tools">
-    <div><b>데이터 · 분석</b><span>네이버 검색광고(SA) API, 네이버 DataLab API, 네이버 서치어드바이저, 공공데이터포털 API, Google Sheets API, Excel.</span></div>
-    <div><b>개발 · 인프라</b><span>Claude Code, VS Code, Node.js, TypeScript, Express, EJS, SQLite, node-cron, PM2, NHN Cloud, Cloudflare, Git.</span></div>
-    <div><b>연동 · 자동화</b><span>카카오 개발자센터 API(소셜로그인·공유하기 CTA), Meta API(Instagram·Threads 자동 발행), 텔레그램 알림봇 생성.</span></div>
-    <div><b>생성형 AI</b><span>Claude, Gemini, ChatGPT.</span></div>
-  </div>
-</section>
-  
-
-<section>
-  <h2>언어</h2>
+<section id="lectures">
+  <h2>강의 · 교육 활동</h2>
   <div class="cred">
-    <div class="when"></div>
+    <div class="when">2026. 02</div>
     <div>
-      <h3>한국어</h3>
-      <p class="org">모국어</p>
+      <h3>토지 권리분석 강의</h3>
+      <p class="org">부동산경매 스터디 · 총원 10명 · 자료 54p 직접 제작</p>
+      <p>법원경매·공매 토지 물건의 권리분석과 가치 평가를 주제로 강의. 지목·용도지역 분석, 특수물건 리스크 판단, 토지보상 가능성 검토.</p>
+      <div class="shots is-collapsed"><figure class="shot"><img src="img/lec-land-01.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-02.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-03.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-04.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-05.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-06.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-07.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-08.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-09.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-10.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-11.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-12.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-13.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-14.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-15.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-16.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-17.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-18.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-19.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-20.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-21.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-22.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-23.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-24.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-25.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-26.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-27.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-28.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-29.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-30.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-31.jpg" alt="" loading="lazy" decoding="async" width="950" height="534" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-32.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-33.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+29장 더보기</button></div>
     </div>
   </div>
   <div class="cred">
-    <div class="when">2026. 09. 10</div>
+    <div class="when">2025. 10</div>
     <div>
-      <h3>영어 — OPIc Intermediate High (IH)</h3>
-      <p class="org">ACTFL · 등록번호 2B2454929632</p>
+      <h3>상속·증여 부동산 이전 전략 강의</h3>
+      <p class="org">(주)영진에셋 사무실 구성원 대상 · 자료 27p 직접 제작</p>
+      <p>KB라이프 세무전문위원 교육(2025. 06) 이수 내용을 바탕으로, 상속·증여 절세 방안을 7개 고객 케이스(고객 사례 → 추천 방안) 구조로 재구성.</p>
+      <div class="shots is-collapsed"><figure class="shot"><img src="img/lec-tax-01.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-02.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-03.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-04.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-05.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-06.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-07.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-08.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-09.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-10.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-11.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-12.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-13.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-14.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-15.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-16.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-17.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-18.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-19.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-20.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-21.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-22.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-23.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-24.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-25.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-26.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-27.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-28.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+24장 더보기</button></div>
+    </div>
+  </div>
+  <div class="cred">
+    <div class="when">2023 ~ 2025</div>
+    <div>
+      <h3>저축성보험 비과세 요건 교육자료 제작</h3>
+      <p class="org">설계사 · 고객 대상</p>
+      <p>설계사와 고객 모두 이해도가 낮은 저축성보험 비과세 요건을 소득세법 시행령 제25조 기준으로 정리해 교육·안내.</p>
+      <div class="shots is-collapsed"><figure class="shot"><img src="img/lec-nontax-01.jpg" alt="" loading="lazy" decoding="async" width="720" height="1040" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-02.jpg" alt="" loading="lazy" decoding="async" width="720" height="1040" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-03.jpg" alt="" loading="lazy" decoding="async" width="720" height="1040" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-04.jpg" alt="" loading="lazy" decoding="async" width="660" height="953" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-05.jpg" alt="" loading="lazy" decoding="async" width="540" height="780" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-06.jpg" alt="" loading="lazy" decoding="async" width="660" height="953" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-07.jpg" alt="" loading="lazy" decoding="async" width="660" height="953" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+3장 더보기</button></div>
+    </div>
+  </div>
+  <div class="cred">
+    <div class="when">2021. 09 ~ 10</div>
+    <div>
+      <h3>신입 설계사 대상 온라인 블로그 영업 교육</h3>
+      <p class="org">(주)에이플러스에셋어드바이저 강남 본사 · 신입 양성과정 일일 강사 · 전국 지점 송출</p>
+      <p>사내에 온라인 기반 영업 사례가 거의 없던 상황에서, 입사 6개월간의 블로그·지식iN 기반 고객 발굴 방식을 정리해 전달.</p>
     </div>
   </div>
 </section>
 
-<section>
+<section id="education">
   <h2>학력</h2>
   <div class="cred">
     <div class="when">2015. 03 ~ 2022. 02</div>
@@ -828,87 +757,19 @@
       <p class="org">서울시립대학교 경영대학 경영학부 — 서울</p>
       <ul>
         <li>학위: 경영학사 / 도시부동산경영학사.</li>
-        <li>학점: 3.66 / 4.50 (백분율 91.6), 취득학점 133학점.</li>
-        <li>전공: 3.86 / 4.50 (백분율 93.6), 취득학점 84학점.</li>
+        <li>학점: 3.66 / 4.50 (백분율 91.6), 취득학점 133학점 · 전공 3.86 / 4.50.</li>
         <li>장학: 학업우수장학(Ⅱ종) 1회, 형설장학(Ⅰ종) 4회·(Ⅱ종) 1회, 희망사다리장학금 1회, 서울장학재단 유영아학업장학금 1회.</li>
       </ul>
     </div>
   </div>
 </section>
-  
 
-<section>
-  <h2>강의 · 교육 활동</h2>
+<section id="certs">
+  <h2>자격 · 어학</h2>
   <div class="cred">
-    <div class="when">2026. 02</div>
-    <div>
-      <h3>토지 권리분석 강의</h3>
-      <p class="org">부동산경매 스터디 · 총원 10명 · 자료 54p 직접 제작</p>
-      <p>법원경매·공매 토지 물건의 권리분석과 가치 평가를 주제로 54p 강의자료 직접 제작 및 강의 수행. 지목·용도지역 분석, 특수물건 리스크 판단, 토지보상 가능성 검토 다룸.</p>
-      <div class="shots is-collapsed"><figure class="shot"><img src="img/lec-land-01.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-02.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-03.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-04.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-05.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-06.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-07.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-08.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-09.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-10.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-11.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-12.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-13.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-14.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-15.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-16.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-17.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-18.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-19.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-20.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-21.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-22.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-23.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-24.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-25.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-26.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-27.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-28.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-29.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-30.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-31.jpg" alt="" loading="lazy" decoding="async" width="950" height="534" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-32.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-land-33.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+25장 더보기</button></div>
-    </div>
+    <div class="when">2026. 09</div>
+    <div><h3>OPIc 영어 — Intermediate High (IH)</h3><p class="org">ACTFL · 등록번호 2B2454929632</p></div>
   </div>
-  <div class="cred">
-    <div class="when">2025. 10</div>
-    <div>
-      <h3>상속·증여 부동산 이전 전략 강의</h3>
-      <p class="org">(주)영진에셋 사무실 구성원 대상 · 자료 27p 직접 제작</p>
-      <p>보험세무 조세정책 KB라이프 세무전문위원 교육(2025. 6) 이수 내용을 바탕으로 27p 교육자료 직접 제작 및 강의 수행. 상속·증여 절세 방안을 7개 고객 케이스(고객사례 → 추천방안) 구조로 재구성.</p>
-      <div class="shots is-collapsed"><figure class="shot"><img src="img/lec-tax-01.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-02.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-03.png" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-04.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-05.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-06.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-07.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-08.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-09.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-10.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-11.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-12.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-13.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-14.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-15.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-16.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-17.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-18.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-19.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-20.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-21.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-22.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-23.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-24.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-25.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-26.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-27.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-tax-28.jpg" alt="" loading="lazy" decoding="async" width="1100" height="619" tabindex="0" role="button"><figcaption></figcaption></figure><button type="button" class="shots-more" aria-expanded="false">+20장 더보기</button></div>
-    </div>
-  </div>
-  <div class="cred">
-    <div class="when">2023 ~ 2025</div>
-    <div>
-      <h3>저축성보험 비과세 요건 교육자료 제작</h3>
-      <p class="org">설계사 · 고객 대상</p>
-      <p>설계사와 고객 모두 이해도가 낮은 저축성보험 비과세 요건을 소득세법 시행령 제25조 기준으로 정리한 교육자료 제작 및 교육.</p>
-      <div class="shots"><figure class="shot"><img src="img/lec-nontax-01.jpg" alt="" loading="lazy" decoding="async" width="720" height="1040" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-02.jpg" alt="" loading="lazy" decoding="async" width="720" height="1040" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-03.jpg" alt="" loading="lazy" decoding="async" width="720" height="1040" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-04.jpg" alt="" loading="lazy" decoding="async" width="660" height="953" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-05.jpg" alt="" loading="lazy" decoding="async" width="540" height="780" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-06.jpg" alt="" loading="lazy" decoding="async" width="660" height="953" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/lec-nontax-07.jpg" alt="" loading="lazy" decoding="async" width="660" height="953" tabindex="0" role="button"><figcaption></figcaption></figure></div>
-    </div>
-  </div>
-  <div class="cred">
-    <div class="when">2021. 09 ~ 10</div>
-    <div>
-      <h3>무경력 신입 설계사 대상 온라인 블로그 영업 교육</h3>
-      <p class="org">(주)에이플러스에셋어드바이저 강남 본사 · 신입 양성과정 일일 강사 · 전국 지점 송출</p>
-      <p>무경력 신입 설계사 양성과정의 일일 강사로 활동. 강남 본사에서 진행, 전국 지점 교육장으로 송출. 사내에 SNS 온라인 기반 영업 사례가 거의 없던 상황에서 입사 6개월간의 네이버 블로그·지식인 기반 고객 발굴 방식을 정리하여 전달.</p>
-      
-    </div>
-  </div>
-</section>
-  
-
-<section>
-  <h2>이수 · 교육</h2>
-  <div class="cred">
-    <div class="when">2025. 03 ~ 05</div>
-    <div>
-      <h3>토지경매 정규반 교육 <span class="aux">18시간</span></h3>
-      <p class="org">리치스쿨 주식회사</p>
-      <p>법원경매·온비드공매·파산자공매 활용 토지 전문 과정. 지목·용도지역 분석, 지분토지·보상토지·특수물건(분묘기지권·유치권) 가치 평가 및 리스크 관리, 토지보상법·산지관리법·농지취득자격증명 등 데이터 기반 개발 가능성 검토 이수.</p>
-    </div>
-  </div>
-  <div class="cred">
-    <div class="when">2024. 02 ~ 04</div>
-    <div>
-      <h3>부동산경매 정규반 교육 <span class="aux">21시간</span></h3>
-      <p class="org">리치스쿨 주식회사</p>
-      <p>등기부등본 분석 기반 권리 하자 검토, 말소기준권리 및 임차인 권리관계 분석, 실거래 데이터 기반 물건 가치 평가 및 입찰가 산정, 경매 절차별 리스크 관리 이수.</p>
-    </div>
-  </div>
-  <div class="cred">
-    <div class="when">2023. 02 ~ 03</div>
-    <div>
-      <h3>자동차보험 전문가 과정 교육 <span class="aux">24시간</span></h3>
-      <p class="org">손해사정사 김중훈 (보험연수원 자동차보험 Part교수)</p>
-      <p>자동차보험 약관 구조 및 대물손해사정 실무 프로세스, 사고 데이터 기반 과실비율 산정 및 분쟁 심의 사례 분석, 대물·대인 손해액 산정 및 지급보험금 적정성 검토 이수.</p>
-    </div>
-  </div>
-</section>
-  
-
-<section>
-  <h2>자격증</h2>
   <div class="cred">
     <div class="when">2021. 05</div>
     <div><h3>변액보험 판매관리사</h3><p class="org">생명보험협회장 · 합격번호 제121400566호</p></div>
@@ -923,11 +784,7 @@
   </div>
   <div class="cred">
     <div class="when">2021. 02</div>
-    <div><h3>생명보험 모집종사자</h3><p class="org">생명보험협회장 · 합격번호 21021006277</p></div>
-  </div>
-  <div class="cred">
-    <div class="when">2021. 02</div>
-    <div><h3>제3보험 모집종사자</h3><p class="org">생명보험협회장 · 합격번호 21021006278</p></div>
+    <div><h3>생명보험 · 제3보험 모집종사자</h3><p class="org">생명보험협회장 · 합격번호 21021006277 / 21021006278</p></div>
   </div>
   <div class="cred">
     <div class="when">2019. 12</div>
@@ -942,9 +799,8 @@
     <div><h3>자동차 운전면허 1종 보통</h3><p class="org">대구광역시경찰청장</p></div>
   </div>
 </section>
-  
 
-<section>
+<section id="awards">
   <h2>수상 · 표창</h2>
   <div class="cred">
     <div class="when">2026. 06. 01</div>
@@ -980,46 +836,71 @@
       <p>대대장 표창 3회(동원훈련 유공, 특급전사 달성, 병영갈등 해소 기여), 연대장 상장 1회(체력왕 유공), 조기진급 2회(상등병·병장) 후 병장 만기전역.</p>
     </div>
   </div>
-</section>
   <div class="shots"><figure class="shot"><img src="img/award-01.jpg" alt="" loading="lazy" decoding="async" width="720" height="960" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/award-02.jpg" alt="" loading="lazy" decoding="async" width="800" height="1152" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/award-03.jpg" alt="" loading="lazy" decoding="async" width="660" height="934" tabindex="0" role="button"><figcaption></figcaption></figure><figure class="shot"><img src="img/award-04.jpg" alt="" loading="lazy" decoding="async" width="793" height="1122" tabindex="0" role="button"><figcaption></figcaption></figure></div>
+</section>
 
-<section>
+<section id="training">
+  <h2>교육 이수</h2>
+  <div class="cred">
+    <div class="when">2025. 03 ~ 05</div>
+    <div>
+      <h3>토지경매 정규반 <span class="aux">18시간</span></h3>
+      <p class="org">리치스쿨 주식회사</p>
+      <p>지목·용도지역 분석, 지분토지·보상토지·특수물건 가치 평가 및 리스크 관리, 토지보상법·산지관리법·농지취득자격증명 검토.</p>
+    </div>
+  </div>
+  <div class="cred">
+    <div class="when">2024. 02 ~ 04</div>
+    <div>
+      <h3>부동산경매 정규반 <span class="aux">21시간</span></h3>
+      <p class="org">리치스쿨 주식회사</p>
+      <p>등기부등본 기반 권리분석, 임차인 권리관계 분석, 실거래 데이터 기반 가치 평가 및 입찰가 산정.</p>
+    </div>
+  </div>
+  <div class="cred">
+    <div class="when">2023. 02 ~ 03</div>
+    <div>
+      <h3>자동차보험 전문가 과정 <span class="aux">24시간</span></h3>
+      <p class="org">손해사정사 김중훈 (보험연수원 자동차보험 Part 교수)</p>
+      <p>자동차보험 약관 구조와 대물손해사정 실무, 과실비율 산정 및 분쟁 심의 사례, 대물·대인 손해액 산정.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <h2>활용 도구</h2>
+  <div class="tools">
+    <div><b>데이터 · 분석</b><span>네이버 검색광고·데이터랩, 네이버 서치어드바이저, Excel(MOS Expert), Google Sheets.</span></div>
+    <div><b>마케팅 · 콘텐츠</b><span>네이버 블로그 SEO, 검색광고 운영, 랜딩페이지 기획, 카드뉴스 제작, 인스타그램·스레드.</span></div>
+    <div><b>문서 · 교육</b><span>PowerPoint(MOS), 교육자료·고객 안내자료 제작.</span></div>
+    <div><b>생성형 AI</b><span>Claude, Gemini, ChatGPT, NotebookLM — 약관 분석, 콘텐츠 제작, 웹 서비스·업무 자동화 구현.</span></div>
+  </div>
+</section>
+
+<section id="volunteer">
   <h2>봉사활동 <span class="h2-note">누적 52시간</span></h2>
   <div class="cred">
-    <div class="when">2021. 04 ~ 05<br><span style="color:var(--data)">12시간</span></div>
-    <div>
-      <h3>미혼모 자녀 정서지원 멘토링</h3>
-      <p class="org">서울시립대학교</p>
-      <p>미혼모 자녀 대상 정서지원 멘토링 및 진로·학습 지도 수행.</p>
-    </div>
+    <div class="when">2021. 04 ~ 05</div>
+    <div><h3>미혼모 자녀 정서지원 멘토링 <span class="aux">12시간</span></h3><p class="org">서울시립대학교</p></div>
   </div>
   <div class="cred">
-    <div class="when">2021. 05<br><span style="color:var(--data)">4시간</span></div>
-    <div>
-      <h3>사랑의 천연비누 만들기</h3>
-      <p class="org">(사)함께하는 한숲</p>
-      <p>해외 소외계층 지원을 위한 천연비누 제작 봉사 참여.</p>
-    </div>
+    <div class="when">2021. 05</div>
+    <div><h3>해외 소외계층 지원 천연비누 제작 <span class="aux">4시간</span></h3><p class="org">(사)함께하는 한숲</p></div>
   </div>
   <div class="cred">
-    <div class="when">2015. 03 ~ 05<br><span style="color:var(--data)">36시간</span></div>
-    <div>
-      <h3>시대누리 봉사단 — 자원봉사 콘텐츠 제작·홍보</h3>
-      <p class="org">서울시립대학교</p>
-      <p>자원봉사 정보 및 봉사자 모집 요청 정보를 수집·정리하여 온·오프라인 콘텐츠로 제작하고 홍보 활동 수행. 사랑의 리퀘스트 재능기부 공연 참여.</p>
-    </div>
+    <div class="when">2015. 03 ~ 05</div>
+    <div><h3>시대누리 봉사단 — 자원봉사 콘텐츠 제작·홍보 <span class="aux">36시간</span></h3><p class="org">서울시립대학교</p></div>
   </div>
 </section>
-  
 
 <div class="contact">
-      <div><b>포트폴리오</b><a href="https://github.com/shore0903-wq/data-marketing-portfolio" target="_blank" rel="noopener">github.com/shore0903-wq/data-marketing-portfolio</a></div>
   <div><b>블로그</b><a href="https://blog.naver.com/kjh0903_" target="_blank" rel="noopener">blog.naver.com/kjh0903_</a></div>
+  <div><b>운영 서비스</b><span><a href="https://stablelife.kr" target="_blank" rel="noopener">stablelife.kr</a> · <a href="https://insutalker.kr" target="_blank" rel="noopener">insutalker.kr</a> · <a href="https://landtalker.kr" target="_blank" rel="noopener">landtalker.kr</a></span></div>
   <div><b>SNS</b><span><a href="https://instagram.com/landtalker" target="_blank" rel="noopener">instagram/landtalker</a> · <a href="https://threads.com/@landtalker" target="_blank" rel="noopener">threads/@landtalker</a></span></div>
-  <div><b>운영 웹서비스</b><span><a href="https://stablelife.kr" target="_blank" rel="noopener">stablelife.kr</a> · <a href="https://insutalker.kr" target="_blank" rel="noopener">insutalker.kr</a> · <a href="https://landtalker.kr" target="_blank" rel="noopener">landtalker.kr</a></span></div>
 </div>
 
 </div>
+
 <script>
 /* 열람 전용 뷰어 — 확대 보기 + 더보기 토글 */
 (function () {
